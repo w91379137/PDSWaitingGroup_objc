@@ -16,8 +16,21 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-iZ-iyo">
+                    <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="tr2-I2-RON"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Push">
+                        <color key="titleColor" red="1" green="0.50980392159999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pushNext:" destination="-1" eventType="touchUpInside" id="csH-Oo-gvj"/>
+                    </connections>
+                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YAn-q7-pDf">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="104" width="320" height="464"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="separatorColor" red="0.78823529410000004" green="0.074509803920000006" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
@@ -26,12 +39,15 @@
                     </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.15686274510000001" green="0.7725490196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="YAn-q7-pDf" secondAttribute="bottom" id="4Uo-E9-fhN"/>
-                <constraint firstItem="YAn-q7-pDf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BwV-fQ-cve"/>
+                <constraint firstItem="gLk-iZ-iyo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ADO-Ak-l5c"/>
+                <constraint firstItem="YAn-q7-pDf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="BwV-fQ-cve"/>
+                <constraint firstAttribute="trailing" secondItem="gLk-iZ-iyo" secondAttribute="trailing" id="Iv6-RD-jBq"/>
                 <constraint firstItem="YAn-q7-pDf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pu6-89-YFU"/>
                 <constraint firstAttribute="trailing" secondItem="YAn-q7-pDf" secondAttribute="trailing" id="aHF-IA-OUy"/>
+                <constraint firstItem="gLk-iZ-iyo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="xYA-zh-oXf"/>
             </constraints>
             <point key="canvasLocation" x="96" y="300"/>
         </view>

@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PDSDownloadTask.h"
+#import "DataObject.h"
 
 @interface TableViewCell : UITableViewCell
 
-@property(nonatomic, weak) PDSDownloadTask *task;
++ (instancetype)cellFromXib;
+@property(nonatomic, weak) DataObject *dataObject;
+
+@property(nonatomic, strong) IBOutlet UILabel *statusLabel;
+@property(nonatomic, strong) IBOutlet UILabel *valueLabel;
 
 @end

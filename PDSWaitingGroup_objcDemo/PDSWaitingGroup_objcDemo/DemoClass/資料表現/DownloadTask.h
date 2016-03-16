@@ -11,17 +11,16 @@
 //ATS
 //https://forums.developer.apple.com/thread/3544
 
-static NSMutableArray *downloadTaskArray;
+@interface DownloadTask : NSObject
+/*
+ 僅是下載進程表現
+ */
 
-@interface PDSDownloadTask : NSObject
-
-+ (NSMutableArray *)allDownloadTask;
-+ (BOOL)isDownloadURLString:(NSString *)urlString;
-+ (PDSDownloadTask *)startdDownloadTaskOfURLString:(NSString *)urlString;
-+ (PDSDownloadTask *)findDownloadTaskOfURLString:(NSString *)urlString;
++ (DownloadTask *)findDownloadTaskOfURLString:(NSString *)urlString;
 
 @property(nonatomic) double downloadProgress;
 @property(nonatomic, strong) NSString *onlineURLString;
-- (NSString *)localURLString;
+@property(nonatomic, strong) NSString *localURLString;
+- (void)startdDownload;
 
 @end

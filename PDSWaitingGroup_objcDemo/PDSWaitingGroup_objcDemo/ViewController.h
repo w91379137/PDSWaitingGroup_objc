@@ -11,7 +11,8 @@
 @interface ViewController : UIViewController
 <UITableViewDataSource, UITableViewDelegate>
 
-@property(nonatomic, strong) NSArray *downloadArray;
+@property(nonatomic, strong) NSArray *downloadURLArray;             //預計下載的所有URL 不管是否重複
+
 @property(nonatomic, strong) IBOutlet UITableView *mainTableView;
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7445A9EA8F347F8D1ABA0E4D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1519B457CFA98F1D67AD7A6 /* libPods.a */; };
+		F87D63981C996C920069C5A9 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87D63971C996C920069C5A9 /* TableViewCell.xib */; };
 		F8987F431C95D79300F8039B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8987F421C95D79300F8039B /* main.m */; };
 		F8987F461C95D79300F8039B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8987F451C95D79300F8039B /* AppDelegate.m */; };
 		F8987F4E1C95D79300F8039B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8987F4D1C95D79300F8039B /* Assets.xcassets */; };
@@ -15,15 +16,18 @@
 		F8987F5B1C95D82500F8039B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8987F591C95D82500F8039B /* ViewController.m */; };
 		F8987F5C1C95D82500F8039B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8987F5A1C95D82500F8039B /* ViewController.xib */; };
 		F8987F611C95DCB400F8039B /* PDSDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8987F601C95DCB400F8039B /* PDSDownloadManager.m */; };
-		F8A708551C966772006C12C0 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A708541C966772006C12C0 /* NSString+MD5.m */; };
-		F8A708581C966A94006C12C0 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A708571C966A94006C12C0 /* TableViewCell.m */; };
-		F8A7085B1C9674B6006C12C0 /* PDSDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A7085A1C9674B6006C12C0 /* PDSDownloadTask.m */; };
+		F8ECD2591C9909C5005477E1 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ECD2501C9909C5005477E1 /* TableViewCell.m */; };
+		F8ECD25A1C9909C5005477E1 /* DownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ECD2531C9909C5005477E1 /* DownloadTask.m */; };
+		F8ECD25B1C9909C5005477E1 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ECD2561C9909C5005477E1 /* NSString+MD5.m */; };
+		F8ECD25F1C990B00005477E1 /* DataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ECD25E1C990B00005477E1 /* DataObject.m */; };
+		F8ECD2621C990C11005477E1 /* PathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ECD2611C990C11005477E1 /* PathManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07AFE1303AB0011B920F3085 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9FB5F412D5252201B5687E63 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D1519B457CFA98F1D67AD7A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87D63971C996C920069C5A9 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F8987F3E1C95D79300F8039B /* PDSWaitingGroup_objcDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDSWaitingGroup_objcDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8987F421C95D79300F8039B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8987F441C95D79300F8039B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,17 +35,21 @@
 		F8987F4D1C95D79300F8039B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8987F501C95D79300F8039B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8987F521C95D79300F8039B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8987F581C95D82500F8039B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F8987F591C95D82500F8039B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F8987F5A1C95D82500F8039B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		F8987F581C95D82500F8039B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		F8987F591C95D82500F8039B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
+		F8987F5A1C95D82500F8039B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ../../ViewController.xib; sourceTree = "<group>"; };
 		F8987F5F1C95DCB400F8039B /* PDSDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDSDownloadManager.h; sourceTree = "<group>"; };
 		F8987F601C95DCB400F8039B /* PDSDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDSDownloadManager.m; sourceTree = "<group>"; };
-		F8A708531C966772006C12C0 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
-		F8A708541C966772006C12C0 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		F8A708561C966A94006C12C0 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		F8A708571C966A94006C12C0 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		F8A708591C9674B6006C12C0 /* PDSDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDSDownloadTask.h; sourceTree = "<group>"; };
-		F8A7085A1C9674B6006C12C0 /* PDSDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDSDownloadTask.m; sourceTree = "<group>"; };
+		F8ECD24F1C9909C5005477E1 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		F8ECD2501C9909C5005477E1 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		F8ECD2521C9909C5005477E1 /* DownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTask.h; sourceTree = "<group>"; };
+		F8ECD2531C9909C5005477E1 /* DownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTask.m; sourceTree = "<group>"; };
+		F8ECD2551C9909C5005477E1 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		F8ECD2561C9909C5005477E1 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		F8ECD25D1C990B00005477E1 /* DataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataObject.h; sourceTree = "<group>"; };
+		F8ECD25E1C990B00005477E1 /* DataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataObject.m; sourceTree = "<group>"; };
+		F8ECD2601C990C11005477E1 /* PathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathManager.h; sourceTree = "<group>"; };
+		F8ECD2611C990C11005477E1 /* PathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +106,6 @@
 				F8987F4F1C95D79300F8039B /* LaunchScreen.storyboard */,
 				F8987F441C95D79300F8039B /* AppDelegate.h */,
 				F8987F451C95D79300F8039B /* AppDelegate.m */,
-				F8987F581C95D82500F8039B /* ViewController.h */,
-				F8987F591C95D82500F8039B /* ViewController.m */,
-				F8987F5A1C95D82500F8039B /* ViewController.xib */,
 				F8A708521C966754006C12C0 /* DemoClass */,
 				F8987F5E1C95DC3500F8039B /* PDSWaitingGroup_objc */,
 				F8987F411C95D79300F8039B /* Supporting Files */,
@@ -129,14 +134,46 @@
 		F8A708521C966754006C12C0 /* DemoClass */ = {
 			isa = PBXGroup;
 			children = (
-				F8A708591C9674B6006C12C0 /* PDSDownloadTask.h */,
-				F8A7085A1C9674B6006C12C0 /* PDSDownloadTask.m */,
-				F8A708531C966772006C12C0 /* NSString+MD5.h */,
-				F8A708541C966772006C12C0 /* NSString+MD5.m */,
-				F8A708561C966A94006C12C0 /* TableViewCell.h */,
-				F8A708571C966A94006C12C0 /* TableViewCell.m */,
+				F8ECD2541C9909C5005477E1 /* 路徑管理 */,
+				F8ECD2511C9909C5005477E1 /* 資料表現 */,
+				F8ECD24E1C9909C5005477E1 /* 介面顯示 */,
 			);
 			path = DemoClass;
+			sourceTree = "<group>";
+		};
+		F8ECD24E1C9909C5005477E1 /* 介面顯示 */ = {
+			isa = PBXGroup;
+			children = (
+				F8987F581C95D82500F8039B /* ViewController.h */,
+				F8987F591C95D82500F8039B /* ViewController.m */,
+				F8987F5A1C95D82500F8039B /* ViewController.xib */,
+				F8ECD24F1C9909C5005477E1 /* TableViewCell.h */,
+				F8ECD2501C9909C5005477E1 /* TableViewCell.m */,
+				F87D63971C996C920069C5A9 /* TableViewCell.xib */,
+			);
+			path = "介面顯示";
+			sourceTree = "<group>";
+		};
+		F8ECD2511C9909C5005477E1 /* 資料表現 */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECD25D1C990B00005477E1 /* DataObject.h */,
+				F8ECD25E1C990B00005477E1 /* DataObject.m */,
+				F8ECD2521C9909C5005477E1 /* DownloadTask.h */,
+				F8ECD2531C9909C5005477E1 /* DownloadTask.m */,
+			);
+			path = "資料表現";
+			sourceTree = "<group>";
+		};
+		F8ECD2541C9909C5005477E1 /* 路徑管理 */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECD2551C9909C5005477E1 /* NSString+MD5.h */,
+				F8ECD2561C9909C5005477E1 /* NSString+MD5.m */,
+				F8ECD2601C990C11005477E1 /* PathManager.h */,
+				F8ECD2611C990C11005477E1 /* PathManager.m */,
+			);
+			path = "路徑管理";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8987F511C95D79300F8039B /* LaunchScreen.storyboard in Resources */,
+				F87D63981C996C920069C5A9 /* TableViewCell.xib in Resources */,
 				F8987F5C1C95D82500F8039B /* ViewController.xib in Resources */,
 				F8987F4E1C95D79300F8039B /* Assets.xcassets in Resources */,
 			);
@@ -260,13 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8A708581C966A94006C12C0 /* TableViewCell.m in Sources */,
-				F8A7085B1C9674B6006C12C0 /* PDSDownloadTask.m in Sources */,
-				F8A708551C966772006C12C0 /* NSString+MD5.m in Sources */,
+				F8ECD25F1C990B00005477E1 /* DataObject.m in Sources */,
 				F8987F5B1C95D82500F8039B /* ViewController.m in Sources */,
 				F8987F611C95DCB400F8039B /* PDSDownloadManager.m in Sources */,
 				F8987F461C95D79300F8039B /* AppDelegate.m in Sources */,
+				F8ECD2591C9909C5005477E1 /* TableViewCell.m in Sources */,
+				F8ECD25A1C9909C5005477E1 /* DownloadTask.m in Sources */,
 				F8987F431C95D79300F8039B /* main.m in Sources */,
+				F8ECD2621C990C11005477E1 /* PathManager.m in Sources */,
+				F8ECD25B1C9909C5005477E1 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

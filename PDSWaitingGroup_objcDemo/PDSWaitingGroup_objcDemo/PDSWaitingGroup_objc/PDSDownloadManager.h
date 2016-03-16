@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface PDSDownloadManager : NSObject
+/*
+ 管理下載數量
+ */
 
 @end
