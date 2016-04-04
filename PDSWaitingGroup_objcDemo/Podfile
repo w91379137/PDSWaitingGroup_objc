@@ -1,4 +1,0 @@
-# platform :ios, '8.0'
-
-pod 'AFNetworking'
-pod 'PDSSafeKVO_objc', :git => 'https://github.com/w91379137/PDSSafeKVO_objc.git'

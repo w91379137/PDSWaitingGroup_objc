@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
         :git => 'https://github.com/w91379137/PDSWaitingGroup_objc.git',
         :tag => s.version.to_s
     }
-    s.source_files = 'PDSWaitingGroup_objcDemo/PDSWaitingGroup_objc/*{.h,.c,.m,.rtf}'
+    s.source_files = 'PDSWaitingGroup_objc/**/*'
     s.requires_arc = true
 
     s.platform = :ios
